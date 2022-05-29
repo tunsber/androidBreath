@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Vdoxstyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#098765</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="KrugStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#239650</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="VedoxStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#888545</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
