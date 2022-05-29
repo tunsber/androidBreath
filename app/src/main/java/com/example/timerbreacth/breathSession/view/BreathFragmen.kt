@@ -57,8 +57,9 @@ class BreathFragmen: Fragment() {
         pauseValue?.text = newValue.exhale.toString()
         haleValue?.text = newValue.sessionDelay2.toString()
 
-        fun setStartEnabled(value: Boolean) {
-            view?.findViewById<Button>(R.id.startButton)?.isEnabled = value
+
         }
+        fun setStartEnabled(value: Boolean) {
+        view?.findViewById<Button>(R.id.startButton)?.isEnabled = value
     }
 }
