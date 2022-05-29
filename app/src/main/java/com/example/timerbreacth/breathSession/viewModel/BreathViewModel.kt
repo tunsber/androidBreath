@@ -28,8 +28,12 @@ class BreathViewModel {
                 listener?.onChange(currentParameters)
             }
 
-            override fun onFinish() {}
+            override fun onFinish() {
+                listener?.setStartEnabled(true)
+            }
         }
+        timer?.start()
+        listener?.setStartEnabled(false)
     }
     fun updateSession() {
         currentParameters.sessionLength -= 1

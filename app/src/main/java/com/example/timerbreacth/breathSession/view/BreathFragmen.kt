@@ -40,6 +40,10 @@ class BreathFragmen: Fragment() {
         exhaleValue.text = viewModel.parameters.sessionDelay1.toString()
         pauseValue.text = viewModel.parameters.exhale.toString()
         haleValue.text = viewModel.parameters.sessionDelay2.toString()
+
+        view.findViewById<Button>(R.id.startButton).setOnClickListener {
+            viewModel.startSession()
+        }
     }
 
     fun onChange(newValue: SessionParametr) {
@@ -52,5 +56,9 @@ class BreathFragmen: Fragment() {
         exhaleValue?.text = newValue.sessionDelay1.toString()
         pauseValue?.text = newValue.exhale.toString()
         haleValue?.text = newValue.sessionDelay2.toString()
+
+        fun setStartEnabled(value: Boolean) {
+            view?.findViewById<Button>(R.id.startButton)?.isEnabled = value
+        }
     }
 }
